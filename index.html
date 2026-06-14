@@ -258,7 +258,7 @@
         .profile-frame {
             position: relative;
             width: 340px;
-            height: 340px;
+            height: 520px;
             border-radius: var(--radius-lg);
             background: linear-gradient(145deg, #ffffff, #e8f5e9);
             border: 2px solid var(--border-color);
@@ -288,6 +288,17 @@
             letter-spacing: 1.5px;
             color: var(--text-main);
         }
+
+        .profile-photo{
+    width:100%;
+    max-width:280px;
+    height:350px;
+    object-fit:cover;
+    border-radius:20px;
+    display:block;
+    margin:0 auto 1rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
 
         /* Generic Section Formatting Rules */
         section {
@@ -785,15 +796,22 @@
 
             <!-- Profile Graphic -->
             <div class="profile-container">
-                <div class="profile-frame">
-                    <div class="profile-art">
-                        <i class="fa-solid fa-user-gear"></i>
-                        <span class="matric-tag">STUDENT HUB</span>
-                        <p style="font-size:0.85rem; color: var(--text-muted); font-weight:700; margin-top:0.3rem;">FTSM / UKM</p>
-                    </div>
-                </div>
-            </div>
+    <div class="profile-frame">
+        <div class="profile-art">
+
+            <img src="images/profile.jpg"
+                 alt="Maizatul Asyikien"
+                 class="profile-photo">
+
+            <span class="matric-tag">STUDENT HUB</span>
+
+            <p style="font-size:0.85rem; color: var(--text-muted); font-weight:700; margin-top:0.3rem;">
+                FTSM / UKM
+            </p>
+
         </div>
+    </div>
+</div>
     </header>
 
     <!-- Section for Lab Deliverables -->
